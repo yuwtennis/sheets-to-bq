@@ -1,0 +1,31 @@
+[
+  {
+    "description": "PBI number",
+    "mode": "REQUIRED",
+    "name": "pbi_id",
+    "type": "INT64"
+  },
+  {
+    "description": "Team name",
+    "mode": "REQUIRED",
+    "name": "team",
+    "type": "STRING"
+  },
+  {
+    "description": "Title of the item",
+    "mode": "REQUIRED",
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "description": "status",
+    "mode": "REQUIRED",
+    "name": "status",
+    "type": "STRING"
+  },
+  {
+    "description": "Story point",
+    "mode": "REQUIRED",
+    "name": "story_point",
+    "type": "INT64"
+]
