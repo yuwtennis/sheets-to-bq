@@ -6,12 +6,6 @@
     "type": "INT64"
   },
   {
-    "description": "Team name",
-    "mode": "REQUIRED",
-    "name": "team",
-    "type": "STRING"
-  },
-  {
     "description": "Title of the item",
     "mode": "REQUIRED",
     "name": "title",
@@ -24,8 +18,21 @@
     "type": "STRING"
   },
   {
-    "description": "Story point",
+    "description": "Scheduled story point",
     "mode": "REQUIRED",
-    "name": "story_point",
+    "name": "scheduled_sp",
     "type": "INT64"
+  },
+  {
+    "description": "Actual story point",
+    "mode": "REQUIRED",
+    "name": "actual_sp",
+    "type": "INT64"
+  },
+  {
+    "description": "Sprint name",
+    "mode": "REQUIRED",
+    "name": "sprint_name",
+    "type": "STRING"
+  }
 ]

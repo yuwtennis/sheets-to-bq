@@ -2,8 +2,8 @@
 LOCATION := asia-northeast1
 PROJECT_ID := creationline001
 DATASET_NAME := catseye
-TABLE_NAME := pbi
-SCHEMA_FILE := pbi.json
+TABLE_NAME := SenbinYojitsu
+SCHEMA_FILE := schema.json
 
 deploy:
 	echo "Creating dataset..."
