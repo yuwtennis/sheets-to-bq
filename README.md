@@ -1,7 +1,7 @@
 # Motivation
 
 Extract data from google sheets and analyze on Data studio 360 .
-Specifically targeting usecase for managing velocity in Scrum product backlog.
+Specifically targeting usecase for calculating velocity in Scrum product backlog.
 
 # Concept
 
@@ -40,6 +40,28 @@ make deploy
 ```
 
 ## Deploy app script
+
+First change settings in `gas-to-bq/sheets-to-bq.js`
+
+### gcloudConfig
+| Name | Description |
+| ---- | ----------- |
+| project_id | Project Id for target BigQuery service |
+| dataset_id | DataSet Id you are going to use |
+| table_id | Table Id you are going to use |
+
+### sheetsConfig
+| Name | Description | Default |
+| ---- | ----------  | ------- |
+| sprint_complete_status | _status_ column value when sprint is completed.  | sprint complete |
+| sprint_archived_status | _status_ column value when pbi item is completed. | 完了 |
+| range | Range in target sheet which you are working on in _a1 notation_ format. | A3:M1000 |
+| index.pbi_id | Index number for PBI number column | 0 |
+| index.title | Index number for title column . Usually this will be something like story description.| 2 |
+| index.status | Index number for status column. | 11 |
+| index.scheduled_sp | Index number for estimated story point. | 7 |
+| index.actual_sp | Index number for actual story point. | 8 |
+| status_column | Status column in _a1 notation_ format. | L3:L1000 |
 
 1. (Only once) clasp login
 ```
