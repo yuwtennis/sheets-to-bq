@@ -1,0 +1,38 @@
+[
+  {
+    "description": "PBI number",
+    "mode": "REQUIRED",
+    "name": "pbi_id",
+    "type": "INT64"
+  },
+  {
+    "description": "Title of the item",
+    "mode": "REQUIRED",
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "description": "status",
+    "mode": "REQUIRED",
+    "name": "status",
+    "type": "STRING"
+  },
+  {
+    "description": "Scheduled story point",
+    "mode": "REQUIRED",
+    "name": "scheduled_sp",
+    "type": "INT64"
+  },
+  {
+    "description": "Actual story point",
+    "mode": "REQUIRED",
+    "name": "actual_sp",
+    "type": "INT64"
+  },
+  {
+    "description": "Sprint name",
+    "mode": "REQUIRED",
+    "name": "sprint_name",
+    "type": "STRING"
+  }
+]
