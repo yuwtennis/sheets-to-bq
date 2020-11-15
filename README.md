@@ -21,6 +21,9 @@ Define schema in bigquery .
 | pbi_id | INT64 | PBI number |
 | title | STRING | Title of the item |
 | status | STRING | Status of sprint |
+| scheduled_sp | INT64 | Scheduled story point |
+| actual_sp | INT64 | Actual story point |
+| sprint_name | STRING | Sprint name |
 
 # HOW TO
 
@@ -48,5 +51,10 @@ clasp login
 
 2. (Only once) Create project
 ```
-clasp create --parentId SHEETS_ID --title "Extract PBI" --rootDir ./catseye
+clasp create --parentId SHEETS_ID --title "My Project Name" --rootDir ./my-work-dir
+```
+
+3. Push to google app script. THIS WILL OVERWRITE CURRENT EXISTING SCRIPTS IN PROJECT.
+```
+ clasp push
 ```

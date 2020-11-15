@@ -2,7 +2,7 @@
   "access": [
     {
      "role": "WRITER",
-     "userByEmail": "y-watanabe@creationline.com"
+     "userByEmail": "hoge@localhost.localdomain"
     },
   ]
 }
