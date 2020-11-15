@@ -49,6 +49,7 @@ function extractFromActiveSheet(sheet, lastRow, sheetsConfig) {
   var range = sheet.getRange(sheetsConfig["range"]);
   var values = range.getValues();
   var json_data = new Array();
+  var updated_on = Utilities.formatDate(new Date(), "Asia/Tokyo", "yyyy-MM-dd");
   
   // Beginning index for this range
   Logger.log(range.getRowIndex());
@@ -65,7 +66,8 @@ function extractFromActiveSheet(sheet, lastRow, sheetsConfig) {
           "status": values[r][sheetsConfig["index"]["status"]],
           "scheduled_sp": Math.floor(values[r][sheetsConfig["index"]["scheduled_sp"]]),
           "actual_sp": Math.floor(values[r][sheetsConfig["index"]["actual_sp"]]),
-          "sprint_name": "sprint-"+Utilities.formatDate(new Date(), "Asia/Tokyo", "yyyy-MM-dd")
+          "sprint_name": "sprint-"+updated_on,
+          "updated_on": updated_on
         }
       })
     }

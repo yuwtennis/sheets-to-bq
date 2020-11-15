@@ -34,5 +34,11 @@
     "mode": "REQUIRED",
     "name": "sprint_name",
     "type": "STRING"
+  },
+  {
+    "description": "Updated date",
+    "mode": "REQUIRED",
+    "name": "updated_on",
+    "type": "DATE"
   }
 ]
