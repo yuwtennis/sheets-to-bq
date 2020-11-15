@@ -1,5 +1,3 @@
-# velocity
-
 # Motivation
 
 Extract data from google sheets and analyze on Data studio 360 .
