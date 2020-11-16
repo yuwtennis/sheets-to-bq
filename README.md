@@ -22,6 +22,8 @@ Define schema in bigquery .
 | scheduled_sp | INT64 | Scheduled story point |
 | actual_sp | INT64 | Actual story point |
 | sprint_name | STRING | Sprint name |
+| sprint_from | STRING | Beginning of sprint |
+| sprint_to | STRING | End of sprint |
 
 # HOW TO
 
