@@ -36,9 +36,15 @@
     "type": "STRING"
   },
   {
-    "description": "Updated date",
+    "description": "Sprint from",
     "mode": "REQUIRED",
-    "name": "updated_on",
+    "name": "sprint_from",
+    "type": "DATE"
+  },
+  {
+    "description": "Sprint to",
+    "mode": "REQUIRED",
+    "name": "sprint_to",
     "type": "DATE"
   }
 ]
